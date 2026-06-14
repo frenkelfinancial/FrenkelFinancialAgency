@@ -3,20 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0e23">
   <title>Frenkel Financial Agency | Build Your Career With Us</title>
   <meta name="description" content="Frenkel Financial Agency — meet our team leader, learn how we support our agents, and schedule an interview to explore joining the team.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230f1b3d'/%3E%3Ctext x='50' y='68' font-size='56' font-family='Arial' font-weight='800' fill='%23d8a13a' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500;1,9..144,600&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <div class="grain" aria-hidden="true"></div>
+
   <header class="site-header" id="header">
     <div class="container header-inner">
       <a href="#home" class="brand">
-        <span class="brand-mark">FF</span>
+        <img src="logo.svg" alt="" class="brand-mark">
         Frenkel Financial Agency
       </a>
       <nav class="nav" id="nav">
@@ -25,6 +28,7 @@
         <a href="#why-us">Why Join</a>
         <a href="#schedule">Schedule</a>
         <a href="#contact">Contact</a>
+        <span class="nav-indicator" aria-hidden="true"></span>
       </nav>
       <a href="#schedule" class="btn btn-primary header-cta">Schedule a Call</a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
@@ -37,9 +41,13 @@
 
     <!-- Hero -->
     <section class="hero" id="home">
+      <div class="hero-mesh" aria-hidden="true"><span></span><span></span><span></span></div>
       <div class="container hero-inner">
         <p class="eyebrow">Frenkel Financial Agency &middot; Now Building Our Team</p>
-        <h1>Build a Career You're Proud Of.</h1>
+        <h1 class="hero-title">
+          <span class="line">Build a Career</span>
+          <span class="line">Built on <span class="flip"><span class="flip-inner"><span>Mentorship</span><span>Momentum</span><span>Opportunity</span><span>Leadership</span></span></span>.</span>
+        </h1>
         <p class="lead">
           Join a team-first insurance agency built on mentorship, modern tools, and a real
           path to growth. Schedule a no-pressure intro call and see if we're the right fit
@@ -56,14 +64,39 @@
           <div class="hero-badge"><span class="dot"></span> Licensed nationwide</div>
         </div>
       </div>
+      <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
     </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>Life &amp; Health Insurance</span><span class="sep">&#10022;</span>
+          <span>Hands-On Mentorship</span><span class="sep">&#10022;</span>
+          <span>Transparent Commissions</span><span class="sep">&#10022;</span>
+          <span>In-House CRM</span><span class="sep">&#10022;</span>
+          <span>Licensing Support</span><span class="sep">&#10022;</span>
+          <span>Path to Leadership</span><span class="sep">&#10022;</span>
+        </div>
+        <div class="marquee-group">
+          <span>Life &amp; Health Insurance</span><span class="sep">&#10022;</span>
+          <span>Hands-On Mentorship</span><span class="sep">&#10022;</span>
+          <span>Transparent Commissions</span><span class="sep">&#10022;</span>
+          <span>In-House CRM</span><span class="sep">&#10022;</span>
+          <span>Licensing Support</span><span class="sep">&#10022;</span>
+          <span>Path to Leadership</span><span class="sep">&#10022;</span>
+        </div>
+      </div>
+    </div>
 
     <!-- About Me -->
     <section class="section" id="about">
       <div class="container about-grid reveal">
-        <div class="avatar">JF</div>
+        <div class="avatar-ring">
+          <div class="avatar">JF</div>
+        </div>
         <div>
-          <h2>Meet Jace Frenkel</h2>
+          <h2 class="split-heading">Meet Jace Frenkel</h2>
           <p class="about-role">Founder &amp; Team Leader, Frenkel Financial Agency</p>
           <p>
             I started Frenkel Financial Agency to build the kind of team I wish I'd had when I
@@ -86,9 +119,10 @@
 
     <!-- About the Agency -->
     <section class="section section-alt" id="agency">
+      <div class="section-glow" aria-hidden="true"></div>
       <div class="container reveal">
         <p class="kicker">The Agency</p>
-        <h2>About Frenkel Financial Agency</h2>
+        <h2 class="split-heading">About Frenkel Financial Agency</h2>
         <p class="desc">
           We're an independent insurance agency focused on life and health products,
           built around a simple idea: agents do their best work when they're well-trained,
@@ -123,7 +157,7 @@
     <section class="section" id="why-us">
       <div class="container reveal">
         <p class="kicker">Why Agents Choose Us</p>
-        <h2>What You Get When You Join the Team</h2>
+        <h2 class="split-heading">What You Get When You Join the Team</h2>
         <p class="desc">
           We built Frenkel Financial Agency to fix the things that make most agencies
           frustrating to work for. Here's what that looks like day to day.
@@ -165,10 +199,11 @@
 
     <!-- Schedule -->
     <section class="section section-alt" id="schedule">
+      <div class="section-glow" aria-hidden="true"></div>
       <div class="container schedule-grid reveal">
         <div>
           <p class="kicker">Take the Next Step</p>
-          <h2>Schedule an Interview</h2>
+          <h2 class="split-heading">Schedule an Interview</h2>
           <p class="desc">
             Pick a time that works for you and we'll set up a short call. No pressure,
             no obligation — just a conversation to see if Frenkel Financial Agency is the
@@ -193,7 +228,7 @@
       <div class="container contact-grid reveal">
         <div>
           <p class="kicker">Get in Touch</p>
-          <h2>Have Questions First?</h2>
+          <h2 class="split-heading">Have Questions First?</h2>
           <p class="desc">
             Not ready to book a call? Send a message and we'll get back to you, or reach
             out directly using the info below.
@@ -247,7 +282,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <span class="brand-mark">FF</span>
+        <img src="logo.svg" alt="" class="brand-mark">
         Frenkel Financial Agency
       </div>
       <div>&copy; <span id="year"></span> Frenkel Financial Agency. All rights reserved.</div>
