@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-14",
+  "title": "Frenkel Financial Agency — The Private Terminal",
+  "extensions": {
+    "colorMeta": {
+      "bg": {
+        "role": "Base page background (dark)",
+        "displayName": "Graphite",
+        "oklch": "oklch(13% 0.006 264)",
+        "hex": "#06070a",
+        "tonalRamp": ["#0a0b0e", "#202225", "#393b3e", "#535559", "#707275", "#8d8f93", "#acaeb2", "#eceef3"]
+      },
+      "surface": {
+        "role": "Raised panels: cards, header/footer fill",
+        "displayName": "Graphite Raised",
+        "oklch": "oklch(18% 0.007 264)",
+        "hex": "#101215",
+        "tonalRamp": ["#0a0b0e", "#202225", "#393b3e", "#535559", "#6f7276", "#8d8f94", "#acaeb2", "#eceef3"]
+      },
+      "surface-2": {
+        "role": "Most-raised elements: flap tiles, avatar plate, nav toggle",
+        "displayName": "Graphite Deep Raised",
+        "oklch": "oklch(23% 0.008 264)",
+        "hex": "#1b1d21",
+        "tonalRamp": ["#090b0f", "#202226", "#383b3f", "#53555a", "#6f7276", "#8d8f94", "#abaeb3", "#eceef4"]
+      },
+      "line": {
+        "role": "Hairline borders and grid seams — the primary depth cue",
+        "displayName": "Hairline",
+        "oklch": "oklch(30% 0.009 264)",
+        "hex": "#2b2e32",
+        "tonalRamp": ["#090b0f", "#1f2226", "#383b3f", "#53555a", "#6f7277", "#8c8f95", "#abaeb4", "#ebeff5"]
+      },
+      "ink": {
+        "role": "Primary text and headings on dark surfaces",
+        "displayName": "Ink",
+        "oklch": "oklch(96% 0.003 264)",
+        "hex": "#f1f2f4",
+        "tonalRamp": ["#0a0b0c", "#212223", "#3a3a3c", "#545557", "#717173", "#8e8f91", "#adaeb0", "#edeef0"]
+      },
+      "ink-2": {
+        "role": "Secondary text / body copy on dark surfaces",
+        "displayName": "Ink Muted",
+        "oklch": "oklch(78% 0.01 264)",
+        "hex": "#b4b7be",
+        "tonalRamp": ["#090b0f", "#1f2227", "#383b40", "#52555b", "#6f7278", "#8c8f95", "#abaeb4", "#ebeff5"]
+      },
+      "ink-3": {
+        "role": "Faintest labels: marquee text, hints, quiet values",
+        "displayName": "Ink Faint",
+        "oklch": "oklch(62% 0.012 264)",
+        "hex": "#82868e",
+        "tonalRamp": ["#090b10", "#1f2228", "#373b41", "#52555c", "#6e7279", "#8b8f97", "#aaaeb6", "#eaeff7"]
+      },
+      "chrome-1": {
+        "role": "Brightest stop of the chrome gradient (brand mark, primary button)",
+        "displayName": "Chrome Bright",
+        "oklch": "oklch(97% 0.003 250)",
+        "hex": "#f4f5f7",
+        "tonalRamp": ["#0a0b0c", "#212223", "#393b3c", "#545557", "#707273", "#8e8f91", "#acaeb0", "#edeff0"]
+      },
+      "chrome-2": {
+        "role": "Mid stop of the chrome gradient; cursor-glow highlight color",
+        "displayName": "Chrome",
+        "oklch": "oklch(82% 0.014 250)",
+        "hex": "#bec5cd",
+        "tonalRamp": ["#070c11", "#1d2228", "#353b42", "#50565d", "#6c727a", "#899098", "#a7afb7", "#e8eff8"]
+      },
+      "chrome-3": {
+        "role": "Deepest stop of the chrome gradient",
+        "displayName": "Chrome Deep",
+        "oklch": "oklch(64% 0.016 250)",
+        "hex": "#858d96",
+        "tonalRamp": ["#060c12", "#1c2229", "#343b43", "#4f565e", "#6b727b", "#889099", "#a7afb8", "#e7f0f9"]
+      },
+      "garnet": {
+        "role": "The single saturated accent — nav indicator, hover accents, focus rings",
+        "displayName": "Garnet",
+        "oklch": "oklch(46% 0.17 25)",
+        "hex": "#a21921",
+        "tonalRamp": ["#390000", "#5a0000", "#7c0000", "#9e141e", "#c13c3b", "#e45d58", "#ff7d76", "#ffbeb4"]
+      },
+      "garnet-bright": {
+        "role": "Brighter garnet for hover/active states and the hero pulse dot",
+        "displayName": "Garnet Bright",
+        "oklch": "oklch(62% 0.19 25)",
+        "hex": "#e24947",
+        "tonalRamp": ["#3d0000", "#600000", "#820000", "#a50013", "#c92f33", "#ed5350", "#ff746e", "#ffb7ac"]
+      },
+      "paper": {
+        "role": "Background of the single inverted (bright) Schedule section",
+        "displayName": "Paper",
+        "oklch": "oklch(97% 0.004 250)",
+        "hex": "#f3f5f8",
+        "tonalRamp": ["#0a0b0d", "#202223", "#393b3d", "#545557", "#707274", "#8d8f91", "#acaeb0", "#eceff1"]
+      },
+      "paper-ink": {
+        "role": "Primary text on the paper section",
+        "displayName": "Paper Ink",
+        "oklch": "oklch(17% 0.008 264)",
+        "hex": "#0e0f13",
+        "tonalRamp": ["#090b0f", "#202226", "#383b3f", "#53555a", "#6f7276", "#8d8f94", "#abaeb3", "#eceef4"]
+      },
+      "paper-ink-2": {
+        "role": "Secondary text on the paper section",
+        "displayName": "Paper Ink Muted",
+        "oklch": "oklch(42% 0.012 264)",
+        "hex": "#4a4d54",
+        "tonalRamp": ["#090b10", "#1f2228", "#373b41", "#52555c", "#6e7279", "#8b8f97", "#aaaeb6", "#eaeff7"]
+      },
+      "paper-line": {
+        "role": "Hairline borders on the paper section",
+        "displayName": "Paper Hairline",
+        "oklch": "oklch(88% 0.006 250)",
+        "hex": "#d5d8db",
+        "tonalRamp": ["#090b0e", "#1f2224", "#383b3e", "#535659", "#6f7275", "#8c8f93", "#abaeb2", "#ebeff2"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "family": "Bricolage Grotesque",
+        "source": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap",
+        "weights": [600],
+        "usage": "Hero h1, section h2 headlines, card/stat titles — always solid ink, never gradient-filled"
+      },
+      "body": {
+        "family": "Geist",
+        "source": "https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap",
+        "weights": [400, 500, 600, 700],
+        "usage": "Body copy, nav, buttons, form fields, marquee, uppercase labels"
+      }
+    },
+    "shadows": {
+      "shadow-sm": {
+        "value": "0 10px 28px -16px oklch(0% 0 0 / .55)",
+        "usage": "Brand mark plate, contact form panel — small grounding lifts"
+      },
+      "shadow": {
+        "value": "0 24px 60px -24px oklch(0% 0 0 / .6)",
+        "usage": "Avatar plate, Calendly panel inside .bracket-frame — panels that float above the page"
+      }
+    },
+    "motion": {
+      "ease": {
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "usage": "Default easing for reveals, hovers, transforms — ease-out-quint character"
+      },
+      "ease-snap": {
+        "value": "cubic-bezier(.65,0,.35,1)",
+        "usage": "Symmetric ease for the split-flap flip rotation"
+      },
+      "splitFlapRotator": {
+        "interval": "2800ms",
+        "flipDuration": "560ms",
+        "textSwapAt": "280ms",
+        "words": ["Mentorship", "Momentum", "Opportunity", "Leadership"],
+        "reducedMotion": "interval disabled; first word stays static"
+      },
+      "cursorGlow": {
+        "transition": "opacity .8s var(--ease)",
+        "blendMode": "soft-light",
+        "enabledWhen": "pointer: fine AND !prefers-reduced-motion"
+      },
+      "reveal": {
+        "transition": "opacity .8s var(--ease), transform .8s var(--ease), filter .8s var(--ease)",
+        "noJsDefault": "fully visible (gated under html.js so JS-disabled/headless renders show content)"
+      }
+    },
+    "breakpoints": {
+      "md": "860px",
+      "sm": "760px"
+    }
+  },
+  "components": [
+    {
+      "name": "button-primary",
+      "description": "Chrome-gradient primary action — the only solid chrome fill in the system.",
+      "html": "<a class=\"btn btn-primary\" href=\"#schedule\">Schedule a Call</a>",
+      "css": ".btn-primary{background:linear-gradient(135deg,var(--chrome-1) 0%,var(--chrome-2) 55%,var(--chrome-3) 100%);color:var(--bg);box-shadow:var(--shadow-sm)}\n.btn-primary:hover{transform:translateY(-2px)}"
+    },
+    {
+      "name": "button-ghost",
+      "description": "Transparent secondary action with a hairline border.",
+      "html": "<a class=\"btn btn-ghost\" href=\"#contact\">Get in Touch</a>",
+      "css": ".btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}\n.btn-ghost:hover{border-color:var(--chrome-3);background:oklch(96% 0.003 264 / .04)}"
+    },
+    {
+      "name": "split-flap-rotator",
+      "description": "Signature hero motif — a mechanical departure-board tile that flips through role-defining words.",
+      "html": "<span class=\"flap\"><span class=\"flap-tile\" id=\"flapTile\">Mentorship</span></span>",
+      "css": ".flap-tile{position:relative;display:inline-flex;align-items:center;justify-content:center;background:var(--surface-2);border:1px solid var(--line);border-radius:.16em;padding:0 .28em;transform-style:preserve-3d;transform-origin:50% 100%;backface-visibility:hidden;box-shadow:inset 0 1px 0 oklch(100% 0 0 / .05),inset 0 -1px 0 oklch(0% 0 0 / .4)}\n.flap-tile.is-flipping{animation:flapFlip .56s var(--ease-snap)}"
+    },
+    {
+      "name": "bracket-frame",
+      "description": "Corner-bracket framing device marking a 'worth a second look' element — used on the founder avatar and the Calendly panel.",
+      "html": "<div class=\"bracket-frame\"><div class=\"calendly-wrap\">...</div></div>",
+      "css": ".bracket-frame{position:relative}\n.bracket-frame::before,.bracket-frame::after{content:'';position:absolute;width:28px;height:28px;border:2px solid var(--chrome-2)}\n.bracket-frame::before{top:-10px;left:-10px;border-right:0;border-bottom:0}\n.bracket-frame::after{bottom:-10px;right:-10px;border-left:0;border-top:0}"
+    },
+    {
+      "name": "hairline-card",
+      "description": "Why-Join grid card — no border/shadow/radius of its own; depth comes from the shared line-colored grid gap.",
+      "html": "<div class=\"card\"><svg class=\"icon\">...</svg><h3>Real Mentorship</h3><p>...</p></div>",
+      "css": ".cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius)}\n.card{background:var(--surface);padding:32px 28px}\n.card .icon{color:var(--chrome-2);transition:color .3s,transform .3s}\n.card:hover .icon{color:var(--garnet-bright);transform:scale(1.08) rotate(-4deg)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Private Terminal — a private aviation departures hall at night: graphite and brushed chrome, a split-flap board clattering through destinations, and exactly one warm garnet light cutting through the cool palette.",
+    "overview": "A recruiting site for an insurance agency leader, addressed to professionals evaluating a career move. The system dramatizes the agency's pitch (mentorship, momentum, ownership) structurally rather than decoratively: the hero's split-flap tile literally cycles through Mentorship / Momentum / Opportunity / Leadership, corner brackets mark the few elements worth a second look, and a soft chrome cursor-glow drifts across dark sections like light on brushed metal. One section (Schedule a Call) inverts to a bright paper surface as the page's single deliberate destination.",
+    "keyCharacteristics": [
+      "Near-monochrome graphite/chrome base with garnet as the single saturated accent",
+      "Bricolage Grotesque (display) + Geist (body/UI) pairing — one expressive voice, one quiet one",
+      "Signature motion: split-flap word rotator, corner-bracket framing, cursor-following chrome glow",
+      "Hairline borders and shared grid-gaps carry depth instead of shadows",
+      "Custom 16-icon line set replaces all emoji, drawn in the chrome brand-mark weight"
+    ],
+    "namedRules": [
+      {
+        "name": "The Single Spark Rule",
+        "rule": "Garnet never fills a surface and never appears twice in the same glance without reason — one nav indicator, one hover accent, one focus ring at a time."
+      },
+      {
+        "name": "The Hairline Rule",
+        "rule": "Reach for a 1px line/paper-line border or a shared-background grid gap before reaching for a box-shadow. Shadows are reserved for the avatar, Calendly panel, and contact form."
+      },
+      {
+        "name": "No Gradient Letters",
+        "rule": "Headings are always a single solid ink/paper-ink color in Bricolage Grotesque. Emphasis comes from weight and scale, never background-clip gradients."
+      }
+    ],
+    "dos": [
+      "Keep garnet to one purposeful element per view",
+      "Use hairline borders and shared grid-gaps for separation",
+      "Keep headings solid-color Bricolage Grotesque",
+      "Keep the Why-Join grid as one shared hairline grid of six",
+      "Reserve the split-flap rotator and bracket frame as singular, recognizable motifs",
+      "Respect prefers-reduced-motion for every animation (flap rotator, cursor glow, reveals, card tilt)"
+    ],
+    "donts": [
+      "No border-left/right accent stripes on cards, list items, or callouts",
+      "No small uppercase tracked kicker above every section",
+      "No second bright/light section beyond Schedule",
+      "No individually-bordered, shadowed, rounded 'feature cards' in the Why-Join grid",
+      "No reuse of the flap-flip animation on other text, or bracket frames on every image",
+      "No avoiding garnet 'to be safe' — its rarity is what makes it read as a spark"
+    ]
+  }
+}

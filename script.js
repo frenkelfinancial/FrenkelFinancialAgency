@@ -37,11 +37,11 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 revealEls.forEach((el) => revealObserver.observe(el));
 
-// Split section headings into words so they can rotate in on scroll
+// Split section headings into words so they can wipe in on scroll
 document.querySelectorAll('.split-heading').forEach((heading) => {
   const words = heading.textContent.trim().split(/\s+/);
   heading.innerHTML = words
-    .map((word, i) => `<span class="word-mask"><span class="word-inner" style="--d:${i * 0.07}s">${word}</span></span>`)
+    .map((word, i) => `<span class="word-mask"><span class="word-inner" style="--d:${i * 0.06}s">${word}</span></span>`)
     .join(' ');
 });
 
@@ -87,37 +87,61 @@ window.addEventListener('resize', () => {
   if (activeLink) moveIndicator(activeLink);
 });
 
-// Hero flip words — rotate phrases in and out
-const flipInner = document.querySelector('.flip-inner');
-if (flipInner) {
-  const words = Array.from(flipInner.children);
-  const flip = flipInner.parentElement;
+// Hero split-flap rotator — words flip in like a departure board
+const flapTile = document.getElementById('flapTile');
+if (flapTile) {
+  const words = ['Mentorship', 'Momentum', 'Opportunity', 'Leadership'];
+  let active = 0;
 
-  const sizeToWidest = () => {
+  const sizeTile = () => {
+    const probe = flapTile.cloneNode(true);
+    probe.style.position = 'absolute';
+    probe.style.visibility = 'hidden';
+    probe.style.minWidth = '0';
+    probe.style.width = 'auto';
+    probe.classList.remove('is-flipping');
+    document.body.appendChild(probe);
     let max = 0;
-    words.forEach((word) => { max = Math.max(max, word.getBoundingClientRect().width); });
-    flip.style.width = `${Math.ceil(max)}px`;
+    words.forEach((word) => {
+      probe.textContent = word;
+      max = Math.max(max, probe.getBoundingClientRect().width);
+    });
+    document.body.removeChild(probe);
+    flapTile.style.minWidth = `${Math.ceil(max)}px`;
   };
 
   if (document.fonts && document.fonts.ready) {
-    document.fonts.ready.then(sizeToWidest);
+    document.fonts.ready.then(sizeTile);
   }
-  sizeToWidest();
-  window.addEventListener('resize', sizeToWidest);
-
-  let active = 0;
-  words[active].classList.add('is-active');
+  sizeTile();
+  window.addEventListener('resize', sizeTile);
 
   if (!prefersReducedMotion) {
     setInterval(() => {
-      const next = (active + 1) % words.length;
-      words[active].classList.remove('is-active');
-      words[active].classList.add('is-exit');
-      words[next].classList.add('is-active');
-      setTimeout(() => words[active].classList.remove('is-exit'), 700);
-      active = next;
-    }, 2600);
+      flapTile.classList.add('is-flipping');
+      setTimeout(() => {
+        active = (active + 1) % words.length;
+        flapTile.textContent = words[active];
+      }, 280);
+      setTimeout(() => flapTile.classList.remove('is-flipping'), 560);
+    }, 2800);
   }
+}
+
+// Cursor-follow chrome highlight on dark surfaces
+const cursorGlow = document.querySelector('.cursor-glow');
+if (cursorGlow && !prefersReducedMotion && window.matchMedia('(pointer: fine)').matches) {
+  let raf = null;
+  window.addEventListener('pointermove', (e) => {
+    if (raf) return;
+    raf = requestAnimationFrame(() => {
+      cursorGlow.style.setProperty('--mx', `${e.clientX}px`);
+      cursorGlow.style.setProperty('--my', `${e.clientY}px`);
+      cursorGlow.classList.add('active');
+      raf = null;
+    });
+  });
+  document.addEventListener('mouseleave', () => cursorGlow.classList.remove('active'));
 }
 
 // Subtle 3D tilt on "why join" cards
