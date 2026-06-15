@@ -238,10 +238,6 @@ html.js .cards-grid.in-view .card{opacity:1;clip-path:inset(0 0 0% 0)}
 .footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;font-size:13.5px;padding:40px 0}
 .footer-brand{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--ink);font-family:var(--display)}
 .footer-brand .brand-mark{height:24px}
-.socials{display:flex;gap:12px}
-.socials a{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:12px;border:1px solid var(--line);color:var(--ink-2);transition:border-color .25s,color .25s,transform .25s}
-.socials a svg{width:18px;height:18px}
-.socials a:hover{border-color:oklch(62% 0.19 25 / .5);color:var(--garnet-bright);transform:translateY(-3px)}
 
 /* ---------- Reveal-on-scroll ---------- */
 .reveal{transition:opacity .8s var(--ease),transform .8s var(--ease),filter .8s var(--ease)}
