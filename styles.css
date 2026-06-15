@@ -193,6 +193,8 @@ html.js .cards-grid.in-view .card{opacity:1;clip-path:inset(0 0 0% 0)}
 .cards-grid .card:nth-child(4){transition-delay:.26s}
 .cards-grid .card:nth-child(5){transition-delay:.33s}
 .cards-grid .card:nth-child(6){transition-delay:.4s}
+.cards-grid .card:nth-child(7){transition-delay:.47s}
+.cards-grid .card:nth-child(8){transition-delay:.54s}
 .card{background:var(--surface);padding:36px 32px;transition:background .4s}
 .card:hover{background:var(--surface-2)}
 .card .icon{display:block;width:28px;height:28px;color:var(--chrome-2);margin-bottom:22px;transition:transform .4s var(--ease),color .3s}
@@ -227,6 +229,9 @@ html.js .cards-grid.in-view .card{opacity:1;clip-path:inset(0 0 0% 0)}
 .contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:var(--garnet-bright);box-shadow:0 0 0 4px oklch(62% 0.19 25 / .18)}
 .contact-form textarea{resize:vertical;min-height:130px}
 .contact-form .hint{font-size:12.5px;color:var(--ink-3);margin:-6px 0 0}
+.form-status{font-size:13.5px;margin:0;min-height:1.4em}
+.form-status.success{color:var(--garnet-bright)}
+.form-status.error{color:var(--ink-2)}
 
 /* ---------- Footer ---------- */
 .site-footer{background:var(--bg);color:var(--ink-2);position:relative;overflow:hidden;border-top:1px solid var(--line)}

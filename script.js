@@ -159,6 +159,41 @@ if (!prefersReducedMotion) {
   });
 }
 
+// Contact form — submit via fetch so visitors get an inline confirmation
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  const statusEl = contactForm.querySelector('.form-status');
+  const submitBtn = contactForm.querySelector('button[type="submit"]');
+
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    submitBtn.disabled = true;
+    statusEl.textContent = 'Sending...';
+    statusEl.classList.remove('success', 'error');
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { Accept: 'application/json' },
+      });
+
+      if (response.ok) {
+        statusEl.textContent = "Thanks — your message is on its way. We'll be in touch soon.";
+        statusEl.classList.add('success');
+        contactForm.reset();
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (err) {
+      statusEl.textContent = "Something went wrong. Please email us directly at jace@frenkelfinancial.com.";
+      statusEl.classList.add('error');
+    } finally {
+      submitBtn.disabled = false;
+    }
+  });
+}
+
 // Footer year
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
